@@ -50,7 +50,7 @@ class Transaction {
  
             // ---> to do here ตรวจสอบว่ามีเงินที่จะโอนมีน้อยกว่าในบัญชีหรือไม่
             
-            if ($amount > $availableAmount){
+            if ($amount >= $availableAmount){
                 return 'โอนเงินไม่สำเร็จ';
             }
             // deduct from the transferred account
